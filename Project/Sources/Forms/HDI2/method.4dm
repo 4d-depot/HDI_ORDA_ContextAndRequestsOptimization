@@ -1,0 +1,52 @@
+C_LONGINT:C283($i; _TabTitles)
+C_BOOLEAN:C305(btnTrace)
+C_OBJECT:C1216($item)
+
+If (btnTrace)
+	TRACE:C157
+End if 
+
+
+Case of 
+		
+	: (Form event code:C388=On Load:K2:1)
+		
+		_TabTitles:=New list:C375
+		ARRAY TEXT:C222(_Descriptions; 0)
+		ARRAY TEXT:C222(_TabLineCode; 0)
+		
+		READ ONLY:C145([INFOS:1])
+		
+		QUERY:C277([INFOS:1]; [INFOS:1]PageNumber:4; "<="; 9)
+		ORDER BY:C49([INFOS:1]; [INFOS:1]PageNumber:4; >)
+		SELECTION TO ARRAY:C260([INFOS:1]Description:2; _Descriptions)
+		
+		For ($i; 1; Records in selection:C76([INFOS:1]))
+			GOTO SELECTED RECORD:C245([INFOS:1]; $i)
+			APPEND TO LIST:C376(_TabTitles; [INFOS:1]TabTitle:3; $i)
+		End for 
+		
+		
+		QUERY:C277([INFOS:1]; [INFOS:1]PageNumber:4; ">="; 10)
+		ORDER BY:C49([INFOS:1]; [INFOS:1]PageNumber:4; >)
+		SELECTION TO ARRAY:C260([INFOS:1]Description:2; _TabLineCode)
+		
+		$connect:=New object:C1471("hostname"; "127.0.0.1:8044"; "user"; "HDI")
+		$remoteDS:=Open datastore:C1452($connect; "remoteDS")
+		
+		Form:C1466.timeout:=60
+		Form:C1466.maxEntries:=350
+		Form:C1466.remoteCacheSettings:=New object:C1471()
+		
+		viewTrace
+		manageTexts
+		RW
+		
+		
+	: (Form event code:C388=On Page Change:K2:54)
+		
+		ds:C1482("remoteDS").clearAllRemoteContexts()
+		ds:C1482("remoteDS").Persons.clearRemoteCache()
+		ds:C1482("remoteDS").Address.clearRemoteCache()
+		
+End case 
