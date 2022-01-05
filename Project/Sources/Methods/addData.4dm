@@ -20,7 +20,7 @@ $template.tempGender:="gender"
 $templateAddress.city:="city"
 $templateAddress.zipCode:="zipCode"
 
-For ($i; 1; 3)
+For ($i; 1; 30)
 	$address:=ds:C1482.Address.new()
 	FakeData_FillObjectTemplate($templateAddress; $address)
 	If (Length:C16($address.zipCode)<=4)
@@ -28,7 +28,7 @@ For ($i; 1; 3)
 	End if 
 	$status:=$address.save()
 	
-	For ($j; 1; 4)
+	For ($j; 1; 60)
 		$person:=ds:C1482.Persons.new()
 		FakeData_FillObjectTemplate($template; $person)
 		
@@ -53,7 +53,7 @@ For ($i; 1; 3)
 	End for 
 End for 
 
-For ($i; 1; 338)
+For ($i; 1; 200)
 	$person:=ds:C1482.Persons.new()
 	FakeData_FillObjectTemplate($template; $person)
 	
@@ -87,3 +87,5 @@ For ($i; 1; 338)
 End for 
 
 FakeData_ArraysDeinit
+
+ALERT:C41("OK")

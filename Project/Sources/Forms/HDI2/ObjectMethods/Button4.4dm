@@ -6,12 +6,12 @@ var $context : Object
 $context:=New object:C1471("context"; "contextAddress")
 $list:=""
 
-For each ($address; ds:C1482("remoteDS").Address.all($context))
+For each ($address; Form:C1466.ds.Address.all($context))
 	
 	$list:=$list+" / "+$address.city
 	
 End for each 
 
-Form:C1466.contextAddress:=ds:C1482("remoteDS").getRemoteContextInfo("contextAddress")
+Form:C1466.contextAddress:=Form:C1466.ds.getRemoteContextInfo("contextAddress")
 
-Form:C1466.allContexts:=ds:C1482("remoteDS").getAllRemoteContexts()
+Form:C1466.allContexts:=Form:C1466.ds.getAllRemoteContexts()

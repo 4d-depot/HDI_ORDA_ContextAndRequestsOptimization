@@ -208,7 +208,7 @@
 		},
 		{
 			"objects": {
-				"Page2Title1": {
+				"Page3Title": {
 					"type": "input",
 					"top": 60,
 					"left": 70,
@@ -339,13 +339,448 @@
 				"Input4": {
 					"type": "input",
 					"left": 56,
-					"top": 523,
+					"top": 490,
 					"width": 426,
 					"height": 145,
 					"enterable": false,
 					"focusable": false,
 					"dataSource": "Form:C1466.allContexts",
 					"dataSourceTypeHint": "object"
+				},
+				"Button5": {
+					"type": "button",
+					"text": "Clear all contexts",
+					"top": 655,
+					"left": 136,
+					"width": 300,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button5.4dm",
+					"focusable": false
+				}
+			}
+		},
+		{
+			"objects": {
+				"Page4Title": {
+					"type": "input",
+					"top": 60,
+					"left": 70,
+					"width": 810,
+					"height": 80,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{4}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"EncryptDataTitle3": {
+					"type": "input",
+					"top": 1082,
+					"left": 164,
+					"width": 332,
+					"height": 113,
+					"sizingX": "grow",
+					"dataSource": "_TabLineCode{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LBSelectRows2": {
+					"type": "input",
+					"top": 104,
+					"left": 434,
+					"width": 380,
+					"height": 81,
+					"sizingX": "grow",
+					"dataSource": "_TabLineCode{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button6": {
+					"type": "button",
+					"text": "Run code",
+					"top": 135,
+					"left": 65,
+					"width": 300,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button6.4dm",
+					"focusable": false
+				},
+				"Button7": {
+					"type": "button",
+					"text": "Run code",
+					"top": 175,
+					"left": 65,
+					"width": 300,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button7.4dm",
+					"focusable": false
+				},
+				"LBSelectRows3": {
+					"type": "input",
+					"top": 216,
+					"left": 434,
+					"width": 380,
+					"height": 81,
+					"sizingX": "grow",
+					"dataSource": "_TabLineCode{2}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Input5": {
+					"type": "input",
+					"left": 51,
+					"top": 307,
+					"width": 431,
+					"height": 81,
+					"enterable": false,
+					"focusable": false,
+					"dataSource": "Form:C1466.personsLearntAttributes",
+					"dataSourceTypeHint": "object"
+				},
+				"Input6": {
+					"type": "input",
+					"left": 51,
+					"top": 401,
+					"width": 431,
+					"height": 81,
+					"enterable": false,
+					"focusable": false,
+					"dataSource": "Form:C1466.addressLearntAttributes",
+					"dataSourceTypeHint": "object"
+				}
+			}
+		},
+		{
+			"objects": {
+				"List Box": {
+					"type": "listbox",
+					"left": 50,
+					"top": 396,
+					"width": 615,
+					"height": 258,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"rowHeight": "20px",
+					"headerHeight": "21px",
+					"scrollbarHorizontal": "hidden",
+					"selectionMode": "none",
+					"focusable": false,
+					"dataSource": "Form:C1466.log",
+					"method": "ObjectMethods/List Box.4dm",
+					"columns": [
+						{
+							"header": {
+								"name": "Header2",
+								"text": "Requests"
+							},
+							"name": "Column2",
+							"footer": {
+								"name": "Footer2"
+							},
+							"dataSource": "This:C1470.url",
+							"width": 600,
+							"enterable": false
+						}
+					]
+				},
+				"List Box1": {
+					"type": "listbox",
+					"left": 50,
+					"top": 132,
+					"width": 409,
+					"height": 251,
+					"events": [
+						"onSelectionChange",
+						"onScroll"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.addresses",
+					"selectionMode": "single",
+					"focusable": false,
+					"headerHeight": "21px",
+					"rowHeight": "20px",
+					"currentItemSource": "Form:C1466.selected",
+					"method": "ObjectMethods/List Box1.4dm",
+					"columns": [
+						{
+							"header": {
+								"text": "City",
+								"name": "Header1"
+							},
+							"name": "Column1",
+							"footer": {
+								"name": "Footer1"
+							},
+							"dataSource": "This:C1470.city"
+						},
+						{
+							"header": {
+								"name": "Header3",
+								"text": "ZipCode"
+							},
+							"name": "Column3",
+							"footer": {
+								"name": "Footer3"
+							},
+							"dataSource": "This:C1470.city"
+						}
+					]
+				},
+				"Button8": {
+					"type": "button",
+					"text": "Run code",
+					"top": 102,
+					"left": 63,
+					"width": 92,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"method": "ObjectMethods/Button8.4dm"
+				},
+				"Button9": {
+					"type": "button",
+					"text": "Refresh log",
+					"top": 602,
+					"left": 757,
+					"width": 120,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"method": "ObjectMethods/Button9.4dm"
+				},
+				"List Box4": {
+					"type": "listbox",
+					"left": 497,
+					"top": 144,
+					"width": 331,
+					"height": 221,
+					"events": [
+						"onSelectionChange",
+						"onScroll"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.selected.persons",
+					"selectionMode": "none",
+					"headerHeight": "21px",
+					"focusable": false,
+					"rowHeight": "20px",
+					"scrollbarHorizontal": "hidden",
+					"method": "ObjectMethods/List Box4.4dm",
+					"columns": [
+						{
+							"header": {
+								"text": "Firstname",
+								"name": "Header7"
+							},
+							"name": "Column7",
+							"footer": {
+								"name": "Footer7"
+							},
+							"dataSource": "This:C1470.firstname"
+						}
+					]
+				},
+				"Input7": {
+					"type": "input",
+					"left": 743,
+					"top": 396,
+					"width": 80,
+					"height": 20,
+					"enterable": false,
+					"focusable": false,
+					"dataSource": "Form:C1466.selected.persons.length"
+				}
+			}
+		},
+		{
+			"objects": {
+				"List Box2": {
+					"type": "listbox",
+					"left": 50,
+					"top": 497,
+					"width": 615,
+					"height": 157,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"rowHeight": "20px",
+					"headerHeight": "21px",
+					"scrollbarHorizontal": "hidden",
+					"selectionMode": "none",
+					"focusable": false,
+					"dataSource": "Form:C1466.log",
+					"columns": [
+						{
+							"header": {
+								"name": "Header4",
+								"text": "Requests"
+							},
+							"name": "Column4",
+							"footer": {
+								"name": "Footer4"
+							},
+							"dataSource": "This:C1470.url",
+							"width": 600,
+							"enterable": false
+						}
+					]
+				},
+				"List Box3": {
+					"type": "listbox",
+					"left": 50,
+					"top": 132,
+					"width": 409,
+					"height": 251,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.persons",
+					"selectionMode": "single",
+					"focusable": false,
+					"headerHeight": "21px",
+					"rowHeight": "20px",
+					"currentItemSource": "Form:C1466.selected",
+					"columns": [
+						{
+							"header": {
+								"text": "Firstname",
+								"name": "Header5"
+							},
+							"name": "Column5",
+							"footer": {
+								"name": "Footer5"
+							},
+							"dataSource": "This:C1470.firstname"
+						},
+						{
+							"header": {
+								"name": "Header6",
+								"text": "Lastname"
+							},
+							"name": "Column6",
+							"footer": {
+								"name": "Footer6"
+							},
+							"dataSource": "This:C1470.lastname"
+						}
+					]
+				},
+				"Button10": {
+					"type": "button",
+					"text": "Run code",
+					"top": 102,
+					"left": 63,
+					"width": 92,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"method": "ObjectMethods/Button10.4dm"
+				},
+				"Button11": {
+					"type": "button",
+					"text": "Refresh log",
+					"top": 469,
+					"left": 50,
+					"width": 120,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"method": "ObjectMethods/Button11.4dm"
+				},
+				"Input10": {
+					"type": "input",
+					"left": 610,
+					"top": 144,
+					"width": 200,
+					"height": 20,
+					"enterable": false,
+					"fill": "#b1c4dd",
+					"dataSource": "Form:C1466.selected.firstname"
+				},
+				"Input11": {
+					"type": "input",
+					"left": 610,
+					"top": 184,
+					"width": 200,
+					"height": 20,
+					"enterable": false,
+					"fill": "#b1c4dd",
+					"dataSource": "Form:C1466.selected.lastname"
+				},
+				"Input12": {
+					"type": "input",
+					"left": 610,
+					"top": 224,
+					"width": 200,
+					"height": 20,
+					"enterable": false,
+					"fill": "#b1c4dd",
+					"dataSource": "Form:C1466.selected.children"
 				}
 			}
 		}
@@ -354,7 +789,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 73,
+	"geometryStamp": 131,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

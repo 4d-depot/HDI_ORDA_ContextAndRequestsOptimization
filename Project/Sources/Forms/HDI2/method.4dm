@@ -32,7 +32,7 @@ Case of
 		SELECTION TO ARRAY:C260([INFOS:1]Description:2; _TabLineCode)
 		
 		$connect:=New object:C1471("hostname"; "127.0.0.1:8044"; "user"; "HDI")
-		$remoteDS:=Open datastore:C1452($connect; "remoteDS")
+		Form:C1466.ds:=Open datastore:C1452($connect; "remoteDS")
 		
 		Form:C1466.timeout:=60
 		Form:C1466.maxEntries:=350
@@ -45,8 +45,12 @@ Case of
 		
 	: (Form event code:C388=On Page Change:K2:54)
 		
-		ds:C1482("remoteDS").clearAllRemoteContexts()
-		ds:C1482("remoteDS").Persons.clearRemoteCache()
-		ds:C1482("remoteDS").Address.clearRemoteCache()
+		Form:C1466.ds.clearAllRemoteContexts()
+		Form:C1466.ds.Persons.clearRemoteCache()
+		Form:C1466.ds.Address.clearRemoteCache()
+		
+		Form:C1466.addresses:=Null:C1517
+		
+		Form:C1466.ds.stopRequestLog()
 		
 End case 
