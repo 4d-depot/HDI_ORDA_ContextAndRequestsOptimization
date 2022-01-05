@@ -1,5 +1,5 @@
 
-
+var $person : cs:C1710.PersonsEntity
 var $list : Text
 
 $list:=""

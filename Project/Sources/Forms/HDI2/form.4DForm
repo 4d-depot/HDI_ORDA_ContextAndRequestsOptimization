@@ -58,10 +58,10 @@
 			"objects": {
 				"information1": {
 					"type": "input",
-					"top": 180,
+					"top": 90,
 					"left": 70,
 					"width": 810,
-					"height": 250,
+					"height": 490,
 					"sizingX": "grow",
 					"dataSource": "_Descriptions{1}",
 					"focusable": false,
@@ -82,8 +82,8 @@
 			"objects": {
 				"Page2Title": {
 					"type": "input",
-					"top": 120,
-					"left": 70,
+					"top": 61,
+					"left": 36,
 					"width": 810,
 					"height": 17,
 					"sizingX": "grow",
@@ -102,10 +102,10 @@
 				},
 				"NewCommand": {
 					"type": "input",
-					"top": 454,
+					"top": 314,
 					"left": 70,
-					"width": 650,
-					"height": 193,
+					"width": 420,
+					"height": 280,
 					"visibility": "visible",
 					"sizingX": "grow",
 					"dataSource": "_TabLineCode{1}",
@@ -143,66 +143,134 @@
 				},
 				"Input": {
 					"type": "input",
-					"left": 68,
-					"top": 204,
-					"width": 138,
-					"height": 17,
+					"left": 149,
+					"top": 151,
+					"width": 100,
+					"height": 20,
 					"dataSource": "Form:C1466.timeout"
 				},
 				"Input1": {
 					"type": "input",
-					"left": 68,
-					"top": 234,
-					"width": 138,
-					"height": 17,
+					"left": 343,
+					"top": 151,
+					"width": 100,
+					"height": 20,
 					"dataSource": "Form:C1466.maxEntries"
 				},
 				"Button": {
 					"type": "button",
 					"text": "Set remote cache settings",
-					"top": 270,
-					"left": 69,
-					"width": 300,
+					"top": 182,
+					"left": 131,
+					"width": 200,
 					"height": 20,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Button.4dm"
+					"method": "ObjectMethods/Button.4dm",
+					"focusable": false
 				},
 				"remoteCacheSettings": {
 					"type": "input",
 					"left": 502,
 					"top": 116,
-					"width": 370,
-					"height": 305,
+					"width": 400,
+					"height": 550,
 					"enterable": false,
 					"focusable": false,
 					"dataSourceTypeHint": "object",
-					"dataSource": "Form:C1466.remoteCacheSettings"
+					"dataSource": "Form:C1466.remoteCacheSettings",
+					"fill": "#c0c0c0"
 				},
 				"Button1": {
 					"type": "button",
 					"text": "Clear remote cache settings",
-					"top": 409,
-					"left": 68,
-					"width": 300,
+					"top": 668,
+					"left": 703,
+					"width": 200,
 					"height": 20,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Button1.4dm"
+					"method": "ObjectMethods/Button1.4dm",
+					"focusable": false
 				},
 				"Button2": {
 					"type": "button",
 					"text": "Run code",
-					"top": 322,
-					"left": 70,
-					"width": 300,
+					"top": 279,
+					"left": 141,
+					"width": 120,
 					"height": 20,
 					"events": [
 						"onClick"
 					],
-					"method": "ObjectMethods/Button2.4dm"
+					"method": "ObjectMethods/Button2.4dm",
+					"focusable": false
+				},
+				"Text1": {
+					"type": "text",
+					"text": "timeout",
+					"top": 151,
+					"left": 59,
+					"width": 70,
+					"height": 20,
+					"textAlign": "right"
+				},
+				"Text2": {
+					"type": "text",
+					"text": "maxEntries",
+					"top": 151,
+					"left": 261,
+					"width": 70,
+					"height": 20,
+					"textAlign": "right"
+				},
+				"Text3": {
+					"type": "text",
+					"text": "ORDA cache content",
+					"top": 91,
+					"left": 511,
+					"width": 300,
+					"height": 20,
+					"textAlign": "automatic",
+					"fontWeight": "bold"
+				},
+				"Text4": {
+					"type": "text",
+					"text": "1",
+					"top": 182,
+					"left": 82,
+					"width": 40,
+					"height": 20,
+					"fill": "#dda0dd",
+					"borderStyle": "solid",
+					"textAlign": "center",
+					"fontWeight": "bold"
+				},
+				"Text5": {
+					"type": "text",
+					"text": "2",
+					"top": 279,
+					"left": 70,
+					"width": 40,
+					"height": 20,
+					"fill": "#dda0dd",
+					"borderStyle": "solid",
+					"textAlign": "center",
+					"fontWeight": "bold"
+				},
+				"Text6": {
+					"type": "text",
+					"text": "3",
+					"top": 674,
+					"left": 653,
+					"width": 40,
+					"height": 20,
+					"fill": "#dda0dd",
+					"borderStyle": "solid",
+					"textAlign": "center",
+					"fontWeight": "bold"
 				}
 			}
 		},
@@ -650,9 +718,9 @@
 				"List Box2": {
 					"type": "listbox",
 					"left": 50,
-					"top": 497,
-					"width": 615,
-					"height": 157,
+					"top": 403,
+					"width": 665,
+					"height": 268,
 					"events": [
 						"onClick",
 						"onHeaderClick",
@@ -677,7 +745,7 @@
 								"name": "Footer4"
 							},
 							"dataSource": "This:C1470.url",
-							"width": 600,
+							"width": 650,
 							"enterable": false
 						}
 					]
@@ -689,10 +757,8 @@
 					"width": 409,
 					"height": 251,
 					"events": [
-						"onClick",
-						"onHeaderClick",
-						"onDataChange",
-						"onSelectionChange"
+						"onSelectionChange",
+						"onScroll"
 					],
 					"listboxType": "collection",
 					"dataSource": "Form:C1466.persons",
@@ -701,6 +767,7 @@
 					"headerHeight": "21px",
 					"rowHeight": "20px",
 					"currentItemSource": "Form:C1466.selected",
+					"method": "ObjectMethods/List Box3.4dm",
 					"columns": [
 						{
 							"header": {
@@ -742,8 +809,8 @@
 				"Button11": {
 					"type": "button",
 					"text": "Refresh log",
-					"top": 469,
-					"left": 50,
+					"top": 653,
+					"left": 783,
 					"width": 120,
 					"height": 20,
 					"events": [
@@ -754,8 +821,8 @@
 				},
 				"Input10": {
 					"type": "input",
-					"left": 610,
-					"top": 144,
+					"left": 681,
+					"top": 149,
 					"width": 200,
 					"height": 20,
 					"enterable": false,
@@ -764,8 +831,8 @@
 				},
 				"Input11": {
 					"type": "input",
-					"left": 610,
-					"top": 184,
+					"left": 681,
+					"top": 189,
 					"width": 200,
 					"height": 20,
 					"enterable": false,
@@ -774,13 +841,22 @@
 				},
 				"Input12": {
 					"type": "input",
-					"left": 610,
-					"top": 224,
+					"left": 681,
+					"top": 229,
 					"width": 200,
 					"height": 20,
 					"enterable": false,
 					"fill": "#b1c4dd",
 					"dataSource": "Form:C1466.selected.children"
+				},
+				"Text": {
+					"type": "text",
+					"text": "Firstname",
+					"top": 149,
+					"left": 504,
+					"width": 150,
+					"height": 20,
+					"textAlign": "right"
 				}
 			}
 		}
@@ -789,7 +865,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 131,
+	"geometryStamp": 258,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

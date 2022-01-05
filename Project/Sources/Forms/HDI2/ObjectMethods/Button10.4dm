@@ -3,9 +3,11 @@
 
 $contextPersons:=New object:C1471("context"; "persons")
 
-$attributes:=New collection:C1472("firstname"; "lastname")
+$listAttributes:=New collection:C1472("firstname"; "lastname")
+Form:C1466.ds.setRemoteContextInfo("persons"; Form:C1466.ds.Persons; $listAttributes; "main")
 
-Form:C1466.ds.setRemoteContextInfo("persons"; Form:C1466.ds.Persons; $attributes; "main"; 10)
+$pageAttributes:=New collection:C1472("firstname"; "lastname"; "children"; "gender")
+Form:C1466.ds.setRemoteContextInfo("persons"; Form:C1466.ds.Persons; $pageAttributes; "currentItem")
 
 Form:C1466.ds.startRequestLog(1000)
 
