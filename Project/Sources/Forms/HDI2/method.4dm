@@ -34,9 +34,11 @@ Case of
 		$connect:=New object:C1471("hostname"; "127.0.0.1:8044"; "user"; "HDI")
 		Form:C1466.ds:=Open datastore:C1452($connect; "remoteDS")
 		
-		Form:C1466.timeout:=60
-		Form:C1466.maxEntries:=350
+		Form:C1466.timeout:=40
+		Form:C1466.maxEntries:=4000
 		Form:C1466.remoteCacheSettings:=New object:C1471()
+		
+		Form:C1466.persons:=Form:C1466.ds.Persons.all()
 		
 		viewTrace
 		manageTexts
@@ -50,6 +52,7 @@ Case of
 		Form:C1466.ds.Address.clearRemoteCache()
 		
 		Form:C1466.remoteCacheSettings:=Form:C1466.ds.Persons.getRemoteCache()
+		
 		
 		Form:C1466.addresses:=Null:C1517
 		
