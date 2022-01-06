@@ -1,9 +1,12 @@
 
+Form:C1466.ds.clearAllRemoteContexts()
+Form:C1466.ds.Persons.clearRemoteCache()
 
 
 $contextPersons:=New object:C1471("context"; "persons")
 
 $listAttributes:=New collection:C1472("firstname"; "lastname")
+
 Form:C1466.ds.setRemoteContextInfo("persons"; Form:C1466.ds.Persons; $listAttributes; "main")
 
 $pageAttributes:=New collection:C1472("firstname"; "lastname"; "children"; "gender")

@@ -52,7 +52,7 @@ Case of
 		Form:C1466.remoteCacheSettings:=Form:C1466.ds.Persons.getRemoteCache()
 		
 		
-		Form:C1466.addresses:=Null:C1517
+		Form:C1466.persons:=Null:C1517
 		
 		Form:C1466.ds.stopRequestLog()
 		
