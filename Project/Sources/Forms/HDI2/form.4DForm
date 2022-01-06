@@ -3,8 +3,8 @@
 	"windowSizingX": "fixed",
 	"windowMinHeight": 720,
 	"windowMaxHeight": 32000,
-	"width": 980,
-	"height": 720,
+	"width": 1020,
+	"height": 800,
 	"menuBar": "Menu Bar #1",
 	"markerHeader": 15,
 	"markerBody": 200,
@@ -27,8 +27,8 @@
 					"type": "tab",
 					"top": 20,
 					"left": 20,
-					"width": 940,
-					"height": 680,
+					"width": 980,
+					"height": 760,
 					"sizingX": "grow",
 					"sizingY": "grow",
 					"dataSource": "_TabTitles",
@@ -40,8 +40,8 @@
 				},
 				"CheckBoxTrace": {
 					"type": "checkbox",
-					"top": 670,
-					"left": 880,
+					"top": 750,
+					"left": 30,
 					"width": 80,
 					"height": 20,
 					"sizingY": "move",
@@ -61,7 +61,7 @@
 					"top": 110,
 					"left": 70,
 					"width": 810,
-					"height": 273,
+					"height": 500,
 					"sizingX": "grow",
 					"dataSource": "_Descriptions{1}",
 					"focusable": false,
@@ -74,35 +74,6 @@
 					"dropping": "custom",
 					"events": [
 						"onDataChange"
-					]
-				},
-				"List Box5": {
-					"type": "listbox",
-					"left": 82,
-					"top": 461,
-					"width": 476,
-					"height": 178,
-					"events": [
-						"onClick",
-						"onHeaderClick",
-						"onDataChange",
-						"onSelectionChange"
-					],
-					"listboxType": "collection",
-					"dataSource": "Form:C1466.persons",
-					"columns": [
-						{
-							"header": {
-								"text": "Header1",
-								"name": "Header8"
-							},
-							"name": "Column8",
-							"footer": {
-								"name": "Footer8"
-							},
-							"dataSource": "This:C1470.firstname",
-							"width": 200
-						}
 					]
 				}
 			}
@@ -214,7 +185,7 @@
 				"Button1": {
 					"type": "button",
 					"text": "Clear cache",
-					"top": 670,
+					"top": 720,
 					"left": 90,
 					"width": 150,
 					"height": 20,
@@ -227,7 +198,7 @@
 				"Button2": {
 					"type": "button",
 					"text": "Run code",
-					"top": 375,
+					"top": 370,
 					"left": 90,
 					"width": 120,
 					"height": 20,
@@ -292,7 +263,7 @@
 				"Text6": {
 					"type": "text",
 					"text": "4",
-					"top": 670,
+					"top": 720,
 					"left": 30,
 					"width": 40,
 					"height": 20,
@@ -325,7 +296,7 @@
 				"Button12": {
 					"type": "button",
 					"text": "Refresh cache content",
-					"top": 610,
+					"top": 640,
 					"left": 90,
 					"width": 180,
 					"height": 20,
@@ -338,7 +309,7 @@
 				"Text7": {
 					"type": "text",
 					"text": "3",
-					"top": 610,
+					"top": 640,
 					"left": 30,
 					"width": 40,
 					"height": 20,
@@ -349,7 +320,7 @@
 				},
 				"NewCommand2": {
 					"type": "input",
-					"top": 640,
+					"top": 670,
 					"left": 90,
 					"width": 500,
 					"height": 20,
@@ -370,7 +341,7 @@
 				},
 				"NewCommand3": {
 					"type": "input",
-					"top": 670,
+					"top": 720,
 					"left": 260,
 					"width": 300,
 					"height": 20,
@@ -393,170 +364,14 @@
 		},
 		{
 			"objects": {
-				"Page3Title": {
-					"type": "input",
-					"top": 60,
-					"left": 70,
-					"width": 810,
-					"height": 80,
-					"sizingX": "grow",
-					"dataSource": "_Descriptions{3}",
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"enterable": false,
-					"styledText": true,
-					"contextMenu": "none",
-					"dragging": "none",
-					"dropping": "custom",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"EncryptDataTitle1": {
-					"type": "input",
-					"top": 1082,
-					"left": 164,
-					"width": 332,
-					"height": 113,
-					"sizingX": "grow",
-					"dataSource": "_TabLineCode{1}",
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "none",
-					"enterable": false,
-					"styledText": true,
-					"contextMenu": "none",
-					"dragging": "none",
-					"dropping": "custom",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"LBSelectRows5": {
-					"type": "input",
-					"top": 104,
-					"left": 434,
-					"width": 380,
-					"height": 81,
-					"sizingX": "grow",
-					"dataSource": "_TabLineCode{1}",
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "sunken",
-					"enterable": false,
-					"styledText": true,
-					"contextMenu": "none",
-					"dragging": "none",
-					"dropping": "custom",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"Button3": {
-					"type": "button",
-					"text": "Run code",
-					"top": 135,
-					"left": 65,
-					"width": 300,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/Button3.4dm",
-					"focusable": false
-				},
-				"Button4": {
-					"type": "button",
-					"text": "Run code",
-					"top": 168,
-					"left": 65,
-					"width": 300,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/Button4.4dm",
-					"focusable": false
-				},
-				"LBSelectRows1": {
-					"type": "input",
-					"top": 216,
-					"left": 434,
-					"width": 380,
-					"height": 81,
-					"sizingX": "grow",
-					"dataSource": "_TabLineCode{2}",
-					"focusable": false,
-					"fill": "transparent",
-					"borderStyle": "sunken",
-					"enterable": false,
-					"styledText": true,
-					"contextMenu": "none",
-					"dragging": "none",
-					"dropping": "custom",
-					"events": [
-						"onDataChange"
-					]
-				},
-				"Input2": {
-					"type": "input",
-					"left": 51,
-					"top": 307,
-					"width": 431,
-					"height": 81,
-					"enterable": false,
-					"focusable": false,
-					"dataSource": "Form:C1466.contextPersons",
-					"dataSourceTypeHint": "object"
-				},
-				"Input3": {
-					"type": "input",
-					"left": 51,
-					"top": 401,
-					"width": 431,
-					"height": 81,
-					"enterable": false,
-					"focusable": false,
-					"dataSource": "Form:C1466.contextAddress",
-					"dataSourceTypeHint": "object"
-				},
-				"Input4": {
-					"type": "input",
-					"left": 56,
-					"top": 490,
-					"width": 426,
-					"height": 145,
-					"enterable": false,
-					"focusable": false,
-					"dataSource": "Form:C1466.allContexts",
-					"dataSourceTypeHint": "object"
-				},
-				"Button5": {
-					"type": "button",
-					"text": "Clear all contexts",
-					"top": 655,
-					"left": 136,
-					"width": 300,
-					"height": 20,
-					"events": [
-						"onClick"
-					],
-					"method": "ObjectMethods/Button5.4dm",
-					"focusable": false
-				}
-			}
-		},
-		{
-			"objects": {
 				"Page4Title": {
 					"type": "input",
 					"top": 60,
 					"left": 70,
-					"width": 810,
-					"height": 80,
+					"width": 830,
+					"height": 130,
 					"sizingX": "grow",
-					"dataSource": "_Descriptions{4}",
+					"dataSource": "_Descriptions{3}",
 					"focusable": false,
 					"fill": "transparent",
 					"borderStyle": "none",
@@ -591,12 +406,12 @@
 				},
 				"LBSelectRows2": {
 					"type": "input",
-					"top": 104,
-					"left": 434,
-					"width": 380,
-					"height": 81,
+					"top": 280,
+					"left": 140,
+					"width": 500,
+					"height": 180,
 					"sizingX": "grow",
-					"dataSource": "_TabLineCode{1}",
+					"dataSource": "_TabLineCode{11}",
 					"focusable": false,
 					"fill": "transparent",
 					"borderStyle": "sunken",
@@ -612,9 +427,9 @@
 				"Button6": {
 					"type": "button",
 					"text": "Run code",
-					"top": 135,
-					"left": 65,
-					"width": 300,
+					"top": 280,
+					"left": 30,
+					"width": 100,
 					"height": 20,
 					"events": [
 						"onClick"
@@ -625,9 +440,9 @@
 				"Button7": {
 					"type": "button",
 					"text": "Run code",
-					"top": 175,
-					"left": 65,
-					"width": 300,
+					"top": 480,
+					"left": 30,
+					"width": 100,
 					"height": 20,
 					"events": [
 						"onClick"
@@ -637,12 +452,12 @@
 				},
 				"LBSelectRows3": {
 					"type": "input",
-					"top": 216,
-					"left": 434,
-					"width": 380,
-					"height": 81,
+					"top": 480,
+					"left": 140,
+					"width": 500,
+					"height": 180,
 					"sizingX": "grow",
-					"dataSource": "_TabLineCode{2}",
+					"dataSource": "_TabLineCode{12}",
 					"focusable": false,
 					"fill": "transparent",
 					"borderStyle": "sunken",
@@ -657,25 +472,312 @@
 				},
 				"Input5": {
 					"type": "input",
-					"left": 51,
-					"top": 307,
-					"width": 431,
-					"height": 81,
+					"left": 650,
+					"top": 310,
+					"width": 350,
+					"height": 120,
 					"enterable": false,
 					"focusable": false,
 					"dataSource": "Form:C1466.personsLearntAttributes",
-					"dataSourceTypeHint": "object"
+					"dataSourceTypeHint": "object",
+					"fill": "#c0c0c0"
 				},
 				"Input6": {
 					"type": "input",
-					"left": 51,
-					"top": 401,
-					"width": 431,
-					"height": 81,
+					"left": 650,
+					"top": 517,
+					"width": 350,
+					"height": 120,
 					"enterable": false,
 					"focusable": false,
 					"dataSource": "Form:C1466.addressLearntAttributes",
-					"dataSourceTypeHint": "object"
+					"dataSourceTypeHint": "object",
+					"fill": "#c0c0c0"
+				},
+				"NewCommand8": {
+					"type": "input",
+					"top": 280,
+					"left": 650,
+					"width": 200,
+					"height": 20,
+					"visibility": "visible",
+					"sizingX": "grow",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "_TabLineCode{13}"
+				},
+				"NewCommand9": {
+					"type": "input",
+					"top": 480,
+					"left": 650,
+					"width": 200,
+					"height": 20,
+					"visibility": "visible",
+					"sizingX": "grow",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "_TabLineCode{14}"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Page3Title": {
+					"type": "input",
+					"top": 60,
+					"left": 70,
+					"width": 830,
+					"height": 130,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{4}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"EncryptDataTitle1": {
+					"type": "input",
+					"top": 1082,
+					"left": 164,
+					"width": 332,
+					"height": 113,
+					"sizingX": "grow",
+					"dataSource": "_TabLineCode{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"LBSelectRows5": {
+					"type": "input",
+					"top": 240,
+					"left": 30,
+					"width": 470,
+					"height": 180,
+					"sizingX": "grow",
+					"dataSource": "_TabLineCode{5}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"text": "Run code",
+					"top": 210,
+					"left": 30,
+					"width": 100,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button3.4dm",
+					"focusable": false
+				},
+				"Button4": {
+					"type": "button",
+					"text": "Run code",
+					"top": 210,
+					"left": 520,
+					"width": 100,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button4.4dm",
+					"focusable": false
+				},
+				"LBSelectRows1": {
+					"type": "input",
+					"top": 240,
+					"left": 520,
+					"width": 470,
+					"height": 180,
+					"sizingX": "grow",
+					"dataSource": "_TabLineCode{8}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Input2": {
+					"type": "input",
+					"left": 200,
+					"top": 430,
+					"width": 250,
+					"height": 100,
+					"enterable": false,
+					"focusable": false,
+					"dataSource": "Form:C1466.contextPersons",
+					"dataSourceTypeHint": "object",
+					"fill": "#c0c0c0"
+				},
+				"Input4": {
+					"type": "input",
+					"left": 200,
+					"top": 540,
+					"width": 300,
+					"height": 230,
+					"enterable": false,
+					"focusable": false,
+					"dataSource": "Form:C1466.allContexts",
+					"dataSourceTypeHint": "object",
+					"fill": "#c0c0c0"
+				},
+				"Button5": {
+					"type": "button",
+					"text": "Clear all contexts",
+					"top": 540,
+					"left": 520,
+					"width": 200,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button5.4dm",
+					"focusable": false
+				},
+				"NewCommand4": {
+					"type": "input",
+					"top": 430,
+					"left": 30,
+					"width": 150,
+					"height": 20,
+					"visibility": "visible",
+					"sizingX": "grow",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "_TabLineCode{6}"
+				},
+				"Input8": {
+					"type": "input",
+					"left": 690,
+					"top": 430,
+					"width": 250,
+					"height": 100,
+					"enterable": false,
+					"focusable": false,
+					"dataSource": "Form:C1466.contextAddress",
+					"dataSourceTypeHint": "object",
+					"fill": "#c0c0c0"
+				},
+				"NewCommand5": {
+					"type": "input",
+					"top": 430,
+					"left": 520,
+					"width": 150,
+					"height": 20,
+					"visibility": "visible",
+					"sizingX": "grow",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "_TabLineCode{7}"
+				},
+				"NewCommand6": {
+					"type": "input",
+					"top": 540,
+					"left": 30,
+					"width": 150,
+					"height": 20,
+					"visibility": "visible",
+					"sizingX": "grow",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "_TabLineCode{9}"
+				},
+				"NewCommand7": {
+					"type": "input",
+					"top": 570,
+					"left": 520,
+					"width": 470,
+					"height": 200,
+					"visibility": "visible",
+					"sizingX": "grow",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "_TabLineCode{10}"
 				}
 			}
 		},
@@ -982,7 +1084,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 625,
+	"geometryStamp": 1234,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
