@@ -1177,7 +1177,7 @@
 				},
 				"Page3Title2": {
 					"type": "input",
-					"top": 80,
+					"top": 60,
 					"left": 70,
 					"width": 830,
 					"height": 130,
@@ -1234,45 +1234,221 @@
 			"objects": {
 				"List Box4": {
 					"type": "listbox",
-					"left": 497,
-					"top": 144,
-					"width": 331,
+					"left": 590,
+					"top": 280,
+					"width": 165,
 					"height": 221,
 					"events": [
 						"onSelectionChange",
 						"onScroll"
 					],
 					"listboxType": "collection",
-					"dataSource": "Form:C1466.selected.persons",
-					"selectionMode": "none",
+					"dataSource": "Form:C1466.addresses",
+					"selectionMode": "single",
 					"headerHeight": "21px",
 					"focusable": false,
 					"rowHeight": "20px",
 					"scrollbarHorizontal": "hidden",
 					"method": "ObjectMethods/List Box4.4dm",
+					"currentItemSource": "Form:C1466.selected",
 					"columns": [
 						{
 							"header": {
-								"text": "Firstname",
+								"text": "City",
 								"name": "Header7"
 							},
 							"name": "Column7",
 							"footer": {
 								"name": "Footer7"
 							},
-							"dataSource": "This:C1470.firstname"
+							"dataSource": "This:C1470.city",
+							"width": 150
 						}
 					]
 				},
 				"Input7": {
 					"type": "input",
-					"left": 743,
-					"top": 396,
+					"left": 910,
+					"top": 410,
 					"width": 80,
 					"height": 20,
 					"enterable": false,
 					"focusable": false,
 					"dataSource": "Form:C1466.selected.persons.length"
+				},
+				"Button13": {
+					"type": "button",
+					"text": "Run code (optimized)",
+					"top": 250,
+					"left": 30,
+					"width": 200,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"method": "ObjectMethods/Button13.4dm"
+				},
+				"LBSelectRows9": {
+					"type": "input",
+					"top": 280,
+					"left": 30,
+					"width": 550,
+					"height": 120,
+					"sizingX": "grow",
+					"dataSource": "_TabLineCode{19}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"List Box6": {
+					"type": "listbox",
+					"left": 30,
+					"top": 570,
+					"width": 815,
+					"height": 181,
+					"events": [
+						"onClick",
+						"onHeaderClick",
+						"onDataChange",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"rowHeight": "20px",
+					"headerHeight": "21px",
+					"scrollbarHorizontal": "hidden",
+					"selectionMode": "none",
+					"focusable": false,
+					"dataSource": "Form:C1466.log",
+					"columns": [
+						{
+							"header": {
+								"name": "Header9",
+								"text": "Requests"
+							},
+							"name": "Column9",
+							"footer": {
+								"name": "Footer9"
+							},
+							"dataSource": "This:C1470.url",
+							"width": 800,
+							"enterable": false
+						}
+					]
+				},
+				"NewCommand11": {
+					"type": "input",
+					"top": 480,
+					"left": 760,
+					"width": 150,
+					"height": 20,
+					"visibility": "visible",
+					"sizingX": "grow",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "_TabLineCode{20}"
+				},
+				"List Box5": {
+					"type": "listbox",
+					"left": 780,
+					"top": 280,
+					"width": 215,
+					"height": 121,
+					"events": [
+						"onSelectionChange",
+						"onScroll"
+					],
+					"listboxType": "collection",
+					"dataSource": "Form:C1466.selected.persons",
+					"headerHeight": "21px",
+					"rowHeight": "20px",
+					"scrollbarHorizontal": "hidden",
+					"focusable": false,
+					"method": "ObjectMethods/List Box5.4dm",
+					"columns": [
+						{
+							"header": {
+								"text": "Persons (lastname)",
+								"name": "Header8"
+							},
+							"name": "Column8",
+							"footer": {
+								"name": "Footer8"
+							},
+							"dataSource": "This:C1470.lastname",
+							"width": 200
+						}
+					]
+				},
+				"Page3Title3": {
+					"type": "input",
+					"top": 60,
+					"left": 70,
+					"width": 830,
+					"height": 180,
+					"sizingX": "grow",
+					"dataSource": "_Descriptions{7}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button14": {
+					"type": "button",
+					"text": "Run code (not optimized)",
+					"top": 410,
+					"left": 30,
+					"width": 200,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"method": "ObjectMethods/Button14.4dm"
+				},
+				"LBSelectRows10": {
+					"type": "input",
+					"top": 440,
+					"left": 30,
+					"width": 550,
+					"height": 90,
+					"sizingX": "grow",
+					"dataSource": "_TabLineCode{21}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
 				}
 			}
 		}
@@ -1281,7 +1457,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 2335,
+	"geometryStamp": 2956,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
