@@ -61,7 +61,7 @@
 					"top": 110,
 					"left": 70,
 					"width": 810,
-					"height": 500,
+					"height": 600,
 					"sizingX": "grow",
 					"dataSource": "_Descriptions{1}",
 					"focusable": false,
@@ -1457,7 +1457,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 2956,
+	"geometryStamp": 2959,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
