@@ -38,7 +38,7 @@ Case of
 		Form:C1466.maxEntries:=4000
 		Form:C1466.remoteCacheSettings:=New object:C1471()
 		
-		viewTrace
+		//viewTrace
 		manageTexts
 		RW
 		

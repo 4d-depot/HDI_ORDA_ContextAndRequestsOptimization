@@ -40,7 +40,7 @@
 				},
 				"CheckBoxTrace": {
 					"type": "checkbox",
-					"top": 750,
+					"top": 770,
 					"left": 30,
 					"width": 80,
 					"height": 20,
@@ -440,7 +440,7 @@
 				"Button7": {
 					"type": "button",
 					"text": "Run code",
-					"top": 480,
+					"top": 580,
 					"left": 30,
 					"width": 100,
 					"height": 20,
@@ -452,7 +452,7 @@
 				},
 				"LBSelectRows3": {
 					"type": "input",
-					"top": 480,
+					"top": 580,
 					"left": 140,
 					"width": 500,
 					"height": 180,
@@ -485,7 +485,7 @@
 				"Input6": {
 					"type": "input",
 					"left": 650,
-					"top": 517,
+					"top": 617,
 					"width": 350,
 					"height": 120,
 					"enterable": false,
@@ -517,7 +517,7 @@
 				},
 				"NewCommand9": {
 					"type": "input",
-					"top": 480,
+					"top": 580,
 					"left": 650,
 					"width": 200,
 					"height": 20,
@@ -535,6 +535,17 @@
 						"onDataChange"
 					],
 					"dataSource": "_TabLineCode{14}"
+				},
+				"Text11": {
+					"type": "text",
+					"text": "Check if we show this",
+					"top": 502,
+					"left": 81,
+					"width": 364,
+					"height": 46,
+					"fontWeight": "bold",
+					"stroke": "#dc143c",
+					"fontSize": 18
 				}
 			}
 		},
@@ -1138,16 +1149,6 @@
 						"onDataChange"
 					]
 				},
-				"Input9": {
-					"type": "input",
-					"left": 730,
-					"top": 510,
-					"width": 150,
-					"height": 20,
-					"enterable": false,
-					"fill": "#b1c4dd",
-					"dataSource": "Form:C1466.selected.gender"
-				},
 				"Text8": {
 					"type": "text",
 					"text": "Lastname",
@@ -1161,15 +1162,6 @@
 					"type": "text",
 					"text": "Children",
 					"top": 470,
-					"left": 630,
-					"width": 80,
-					"height": 20,
-					"textAlign": "right"
-				},
-				"Text10": {
-					"type": "text",
-					"text": "Gender",
-					"top": 510,
 					"left": 630,
 					"width": 80,
 					"height": 20,
@@ -1227,6 +1219,25 @@
 					"events": [
 						"onDataChange"
 					]
+				},
+				"Input9": {
+					"type": "input",
+					"left": 730,
+					"top": 510,
+					"width": 150,
+					"height": 20,
+					"enterable": false,
+					"fill": "#b1c4dd",
+					"dataSource": "Form:C1466.selected.gender"
+				},
+				"Text10": {
+					"type": "text",
+					"text": "Gender",
+					"top": 510,
+					"left": 630,
+					"width": 80,
+					"height": 20,
+					"textAlign": "right"
 				}
 			}
 		},
@@ -1457,7 +1468,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 2959,
+	"geometryStamp": 2992,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
