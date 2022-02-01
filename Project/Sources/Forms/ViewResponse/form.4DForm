@@ -1,0 +1,55 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "fixed",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "window title",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Input": {
+					"type": "input",
+					"left": 30,
+					"top": 30,
+					"width": 840,
+					"height": 750,
+					"enterable": false,
+					"focusable": false,
+					"dataSource": "Form:C1466.data.response.body",
+					"dataSourceTypeHint": "object"
+				}
+			}
+		}
+	],
+	"width": 1020,
+	"height": 800,
+	"geometryStamp": 10,
+	"method": "method.4dm"
+}

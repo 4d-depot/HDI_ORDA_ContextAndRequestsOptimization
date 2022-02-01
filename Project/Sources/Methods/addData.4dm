@@ -20,7 +20,7 @@ $template.tempGender:="gender"
 $templateAddress.city:="city"
 $templateAddress.zipCode:="zipCode"
 
-For ($i; 1; 20)
+For ($i; 1; 40)
 	$address:=ds:C1482.Address.new()
 	FakeData_FillObjectTemplate($templateAddress; $address)
 	If (Length:C16($address.zipCode)<=4)
