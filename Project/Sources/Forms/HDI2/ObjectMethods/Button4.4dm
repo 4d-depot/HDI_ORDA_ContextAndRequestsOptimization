@@ -2,13 +2,14 @@
 
 var $list : Text
 var $context : Object
+var $address : cs:C1710.AddressEntity
 
 $context:=New object:C1471("context"; "contextAddress")
 $list:=""
 
 For each ($address; Form:C1466.ds.Address.all($context))
 	
-	$list:=$list+" / "+$address.city
+	$list:=$list+$address.city+" / "
 	
 End for each 
 

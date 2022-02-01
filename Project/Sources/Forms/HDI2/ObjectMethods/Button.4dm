@@ -1,4 +1,9 @@
 
+
+If (btnTrace)
+	TRACE:C157
+End if 
+
 var $settings : Object
 
 $settings:=New object:C1471
