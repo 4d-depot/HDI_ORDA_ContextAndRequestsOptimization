@@ -2,6 +2,8 @@ C_LONGINT:C283($i; _TabTitles)
 C_BOOLEAN:C305(btnTrace)
 C_OBJECT:C1216($item)
 
+var $connect : Object
+
 If (btnTrace)
 	TRACE:C157
 End if 
@@ -34,6 +36,9 @@ Case of
 		$connect:=New object:C1471("hostname"; "127.0.0.1:8044"; "user"; "HDI")
 		Form:C1466.ds:=Open datastore:C1452($connect; "remoteDS")
 		
+		Form:C1466.defaultCacheSettings:=New object:C1471("timeout"; 30)
+		Form:C1466.longCacheSettings:=New object:C1471("timeout"; 180)
+		
 		viewTrace
 		manageTexts
 		RW
@@ -45,6 +50,7 @@ Case of
 		Form:C1466.ds.Persons.clearRemoteCache()
 		Form:C1466.ds.Address.clearRemoteCache()
 		Form:C1466.ds.stopRequestLog()
+		Form:C1466.ds.Persons.setRemoteCacheSettings(Form:C1466.defaultCacheSettings)
 		
 		//Page 2
 		Form:C1466.remoteCacheSettings:=Form:C1466.ds.Persons.getRemoteCache()
@@ -55,6 +61,13 @@ Case of
 		Form:C1466.persons:=Null:C1517
 		Form:C1466.log:=Null:C1517
 		
+		//If ((FORM Get current page#7) & (Form.ds.Persons.all().length>200))
+		//importSmallData
+		//End if 
+		
+		//If ((FORM Get current page=7) & (Form.ds.Persons.all().length<=200))
+		//importBigData
+		//End if 
 		
 		viewTrace
 		

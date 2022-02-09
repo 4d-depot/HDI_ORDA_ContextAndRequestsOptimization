@@ -4,6 +4,10 @@ var $list : Text
 var $persons : cs:C1710.PersonsSelection
 var $person : cs:C1710.PersonsEntity
 
+If (btnTrace)
+	TRACE:C157
+End if 
+
 Form:C1466.ds.clearAllRemoteContexts()
 Form:C1466.ds.Persons.clearRemoteCache()
 

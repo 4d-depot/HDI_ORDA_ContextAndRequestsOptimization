@@ -3,6 +3,10 @@
 var $contextPersons : Object
 var $attributes : Collection
 
+If (btnTrace)
+	TRACE:C157
+End if 
+
 //OBJECT SET SCROLL POSITION(*; "LBPersons1"; 1)
 
 Form:C1466.ds.clearAllRemoteContexts()

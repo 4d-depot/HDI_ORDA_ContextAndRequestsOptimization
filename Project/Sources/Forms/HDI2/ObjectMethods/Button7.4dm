@@ -3,6 +3,10 @@ var $text : Text
 var $address : cs:C1710.AddressEntity
 var $contextAddress : Object
 
+If (btnTrace)
+	TRACE:C157
+End if 
+
 Form:C1466.ds.clearAllRemoteContexts()
 Form:C1466.ds.Address.clearRemoteCache()
 

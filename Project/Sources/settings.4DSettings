@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="15">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="17">
 	<com.4d>
 		<deployment>
 			<options/>
 		</deployment>
-		<general startup_environnement="1"/>
+		<general component_classStore_name="" startup_environnement="0"/>
 		<interface>
 			<user splash_screen="false"/>
 		</interface>

@@ -1261,7 +1261,7 @@
 					"left": 190,
 					"top": 400,
 					"width": 165,
-					"height": 121,
+					"height": 161,
 					"events": [
 						"onSelectionChange",
 						"onScroll"
@@ -1292,9 +1292,9 @@
 				},
 				"Input7": {
 					"type": "input",
-					"left": 510,
-					"top": 530,
-					"width": 80,
+					"left": 640,
+					"top": 540,
+					"width": 50,
 					"height": 20,
 					"enterable": false,
 					"focusable": false,
@@ -1303,7 +1303,7 @@
 				"Button13": {
 					"type": "button",
 					"text": "Run code (optimized)",
-					"top": 210,
+					"top": 230,
 					"left": 30,
 					"width": 200,
 					"height": 20,
@@ -1315,9 +1315,9 @@
 				},
 				"LBSelectRows9": {
 					"type": "input",
-					"top": 240,
+					"top": 260,
 					"left": 30,
-					"width": 550,
+					"width": 590,
 					"height": 120,
 					"sizingX": "grow",
 					"dataSource": "_TabLineCode{19}",
@@ -1390,7 +1390,7 @@
 				},
 				"List Box5": {
 					"type": "listbox",
-					"left": 380,
+					"left": 420,
 					"top": 400,
 					"width": 215,
 					"height": 121,
@@ -1424,8 +1424,8 @@
 					"type": "input",
 					"top": 60,
 					"left": 70,
-					"width": 830,
-					"height": 180,
+					"width": 880,
+					"height": 160,
 					"sizingX": "grow",
 					"dataSource": "_Descriptions{7}",
 					"focusable": false,
@@ -1443,8 +1443,8 @@
 				"Button14": {
 					"type": "button",
 					"text": "Run code (not optimized)",
-					"top": 210,
-					"left": 610,
+					"top": 230,
+					"left": 630,
 					"width": 200,
 					"height": 20,
 					"events": [
@@ -1455,9 +1455,9 @@
 				},
 				"LBSelectRows10": {
 					"type": "input",
-					"top": 240,
-					"left": 610,
-					"width": 380,
+					"top": 260,
+					"left": 630,
+					"width": 360,
 					"height": 90,
 					"sizingX": "grow",
 					"dataSource": "_TabLineCode{21}",
@@ -1475,9 +1475,9 @@
 				},
 				"Input13": {
 					"type": "input",
-					"left": 270,
-					"top": 530,
-					"width": 80,
+					"left": 360,
+					"top": 540,
+					"width": 50,
 					"height": 20,
 					"enterable": false,
 					"focusable": false,
@@ -1486,11 +1486,24 @@
 				"Text13": {
 					"type": "text",
 					"text": "Click to view the response",
-					"top": 560,
+					"top": 570,
 					"left": 30,
 					"width": 300,
 					"height": 20,
 					"fontStyle": "italic"
+				},
+				"Button15": {
+					"type": "button",
+					"text": "Reset log",
+					"top": 590,
+					"left": 860,
+					"width": 100,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"focusable": false,
+					"method": "ObjectMethods/Button15.4dm"
 				}
 			}
 		}
@@ -1499,7 +1512,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 4015,
+	"geometryStamp": 4104,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

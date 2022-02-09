@@ -1,4 +1,8 @@
 
+If (btnTrace)
+	TRACE:C157
+End if 
+
 Form:C1466.ds.clearAllRemoteContexts()
 
 Form:C1466.contextPersons:=Form:C1466.ds.getRemoteContextInfo("contextPersons")

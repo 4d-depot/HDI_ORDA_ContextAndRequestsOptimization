@@ -4,6 +4,10 @@ var $list : Text
 var $context : Object
 var $person : cs:C1710.PersonsEntity
 
+If (btnTrace)
+	TRACE:C157
+End if 
+
 $context:=New object:C1471("context"; "contextPersons")
 $list:=""
 
