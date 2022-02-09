@@ -40,8 +40,8 @@
 				},
 				"CheckBoxTrace": {
 					"type": "checkbox",
-					"top": 770,
-					"left": 30,
+					"top": 760,
+					"left": 930,
 					"width": 80,
 					"height": 20,
 					"sizingY": "move",
@@ -143,15 +143,15 @@
 				},
 				"Input": {
 					"type": "input",
-					"left": 140,
+					"left": 210,
 					"top": 250,
-					"width": 70,
+					"width": 50,
 					"height": 20,
 					"dataSource": "Form:C1466.timeout"
 				},
 				"Input1": {
 					"type": "input",
-					"left": 300,
+					"left": 350,
 					"top": 250,
 					"width": 70,
 					"height": 20,
@@ -161,7 +161,7 @@
 					"type": "button",
 					"text": "Apply",
 					"top": 250,
-					"left": 390,
+					"left": 440,
 					"width": 80,
 					"height": 20,
 					"events": [
@@ -210,10 +210,10 @@
 				},
 				"Text1": {
 					"type": "text",
-					"text": "timeout",
+					"text": "timeout (seconds)",
 					"top": 250,
-					"left": 60,
-					"width": 70,
+					"left": 80,
+					"width": 120,
 					"height": 20,
 					"textAlign": "right"
 				},
@@ -221,7 +221,7 @@
 					"type": "text",
 					"text": "maxEntries",
 					"top": 250,
-					"left": 220,
+					"left": 270,
 					"width": 70,
 					"height": 20,
 					"textAlign": "right"
@@ -369,7 +369,7 @@
 					"top": 60,
 					"left": 70,
 					"width": 860,
-					"height": 160,
+					"height": 190,
 					"sizingX": "grow",
 					"dataSource": "_Descriptions{3}",
 					"focusable": false,
@@ -924,9 +924,9 @@
 				},
 				"Input3": {
 					"type": "input",
-					"left": 890,
+					"left": 920,
 					"top": 500,
-					"width": 80,
+					"width": 50,
 					"height": 20,
 					"dataSource": "Form:C1466.persons.length",
 					"enterable": false
@@ -1111,7 +1111,8 @@
 					"height": 20,
 					"enterable": false,
 					"fill": "#B9CFBD",
-					"dataSource": "Form:C1466.selected.firstname"
+					"dataSource": "Form:C1466.selected.firstname",
+					"textAlign": "right"
 				},
 				"Input11": {
 					"type": "input",
@@ -1121,7 +1122,8 @@
 					"height": 20,
 					"enterable": false,
 					"fill": "#B9CFBD",
-					"dataSource": "Form:C1466.selected.lastname"
+					"dataSource": "Form:C1466.selected.lastname",
+					"textAlign": "right"
 				},
 				"Input12": {
 					"type": "input",
@@ -1131,7 +1133,8 @@
 					"height": 20,
 					"enterable": false,
 					"fill": "#B9CFBD",
-					"dataSource": "Form:C1466.selected.children"
+					"dataSource": "Form:C1466.selected.children",
+					"textAlign": "right"
 				},
 				"Text": {
 					"type": "text",
@@ -1241,7 +1244,8 @@
 					"height": 20,
 					"enterable": false,
 					"fill": "#B9CFBD",
-					"dataSource": "Form:C1466.selected.gender"
+					"dataSource": "Form:C1466.selected.gender",
+					"textAlign": "right"
 				},
 				"Text10": {
 					"type": "text",
@@ -1259,7 +1263,7 @@
 				"List Box4": {
 					"type": "listbox",
 					"left": 190,
-					"top": 400,
+					"top": 420,
 					"width": 165,
 					"height": 161,
 					"events": [
@@ -1292,8 +1296,8 @@
 				},
 				"Input7": {
 					"type": "input",
-					"left": 640,
-					"top": 540,
+					"left": 580,
+					"top": 550,
 					"width": 50,
 					"height": 20,
 					"enterable": false,
@@ -1303,7 +1307,7 @@
 				"Button13": {
 					"type": "button",
 					"text": "Run code (optimized)",
-					"top": 230,
+					"top": 250,
 					"left": 30,
 					"width": 200,
 					"height": 20,
@@ -1315,7 +1319,7 @@
 				},
 				"LBSelectRows9": {
 					"type": "input",
-					"top": 260,
+					"top": 280,
 					"left": 30,
 					"width": 590,
 					"height": 120,
@@ -1337,7 +1341,7 @@
 					"type": "listbox",
 					"left": 30,
 					"top": 590,
-					"width": 815,
+					"width": 805,
 					"height": 181,
 					"events": [
 						"onSelectionChange"
@@ -1355,21 +1359,24 @@
 						{
 							"header": {
 								"name": "Header9",
-								"text": "Requests"
+								"text": "Click on a request to view the response",
+								"fontWeight": "bold",
+								"stroke": "#006400",
+								"fontSize": 14
 							},
 							"name": "Column9",
 							"footer": {
 								"name": "Footer9"
 							},
 							"dataSource": "This:C1470.url",
-							"width": 800,
+							"width": 790,
 							"enterable": false
 						}
 					]
 				},
 				"NewCommand11": {
 					"type": "input",
-					"top": 400,
+					"top": 420,
 					"left": 30,
 					"width": 150,
 					"height": 20,
@@ -1391,7 +1398,7 @@
 				"List Box5": {
 					"type": "listbox",
 					"left": 420,
-					"top": 400,
+					"top": 420,
 					"width": 215,
 					"height": 121,
 					"events": [
@@ -1425,7 +1432,7 @@
 					"top": 60,
 					"left": 70,
 					"width": 880,
-					"height": 160,
+					"height": 190,
 					"sizingX": "grow",
 					"dataSource": "_Descriptions{7}",
 					"focusable": false,
@@ -1443,7 +1450,7 @@
 				"Button14": {
 					"type": "button",
 					"text": "Run code (not optimized)",
-					"top": 230,
+					"top": 250,
 					"left": 630,
 					"width": 200,
 					"height": 20,
@@ -1455,7 +1462,7 @@
 				},
 				"LBSelectRows10": {
 					"type": "input",
-					"top": 260,
+					"top": 280,
 					"left": 630,
 					"width": 360,
 					"height": 90,
@@ -1476,7 +1483,7 @@
 				"Input13": {
 					"type": "input",
 					"left": 360,
-					"top": 540,
+					"top": 560,
 					"width": 50,
 					"height": 20,
 					"enterable": false,
@@ -1485,18 +1492,19 @@
 				},
 				"Text13": {
 					"type": "text",
-					"text": "Click to view the response",
+					"text": "Requests",
 					"top": 570,
 					"left": 30,
-					"width": 300,
+					"width": 150,
 					"height": 20,
-					"fontStyle": "italic"
+					"fontStyle": "normal",
+					"fontWeight": "bold"
 				},
 				"Button15": {
 					"type": "button",
 					"text": "Reset log",
 					"top": 590,
-					"left": 860,
+					"left": 840,
 					"width": 100,
 					"height": 20,
 					"events": [
@@ -1512,7 +1520,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 4104,
+	"geometryStamp": 4161,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

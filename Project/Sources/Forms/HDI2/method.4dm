@@ -54,7 +54,7 @@ Case of
 		
 		//Page 2
 		Form:C1466.remoteCacheSettings:=Form:C1466.ds.Persons.getRemoteCache()
-		Form:C1466.timeout:=40
+		Form:C1466.timeout:=20
 		Form:C1466.maxEntries:=4000
 		
 		//Page 5 - 6
