@@ -7,7 +7,6 @@ If (btnTrace)
 	TRACE:C157
 End if 
 
-//OBJECT SET SCROLL POSITION(*; "LBPersons1"; 1)
 
 Form:C1466.ds.clearAllRemoteContexts()
 Form:C1466.ds.Persons.clearRemoteCache()

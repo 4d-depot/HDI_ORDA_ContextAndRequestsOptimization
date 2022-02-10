@@ -172,7 +172,7 @@
 				},
 				"remoteCacheSettings": {
 					"type": "input",
-					"left": 530,
+					"left": 560,
 					"top": 270,
 					"width": 420,
 					"height": 400,
@@ -230,7 +230,7 @@
 					"type": "text",
 					"text": "ORDA cache content",
 					"top": 250,
-					"left": 530,
+					"left": 560,
 					"width": 300,
 					"height": 20,
 					"textAlign": "automatic",
@@ -440,7 +440,7 @@
 				"Button7": {
 					"type": "button",
 					"text": "Run code",
-					"top": 540,
+					"top": 530,
 					"left": 30,
 					"width": 100,
 					"height": 20,
@@ -452,10 +452,10 @@
 				},
 				"LBSelectRows3": {
 					"type": "input",
-					"top": 510,
+					"top": 500,
 					"left": 140,
 					"width": 500,
-					"height": 220,
+					"height": 270,
 					"sizingX": "grow",
 					"dataSource": "_TabLineCode{12}",
 					"focusable": false,
@@ -485,7 +485,7 @@
 				"Input6": {
 					"type": "input",
 					"left": 650,
-					"top": 547,
+					"top": 530,
 					"width": 350,
 					"height": 120,
 					"enterable": false,
@@ -517,7 +517,7 @@
 				},
 				"NewCommand9": {
 					"type": "input",
-					"top": 510,
+					"top": 500,
 					"left": 650,
 					"width": 200,
 					"height": 20,
@@ -551,7 +551,7 @@
 				"Text12": {
 					"type": "text",
 					"text": "2",
-					"top": 510,
+					"top": 500,
 					"left": 50,
 					"width": 40,
 					"height": 20,
@@ -609,7 +609,7 @@
 					"top": 260,
 					"left": 30,
 					"width": 470,
-					"height": 170,
+					"height": 190,
 					"sizingX": "grow",
 					"dataSource": "_TabLineCode{5}",
 					"focusable": false,
@@ -627,7 +627,7 @@
 				"Button3": {
 					"type": "button",
 					"text": "Run code",
-					"top": 230,
+					"top": 240,
 					"left": 30,
 					"width": 100,
 					"height": 20,
@@ -640,7 +640,7 @@
 				"Button4": {
 					"type": "button",
 					"text": "Run code",
-					"top": 450,
+					"top": 460,
 					"left": 30,
 					"width": 100,
 					"height": 20,
@@ -655,7 +655,7 @@
 					"top": 480,
 					"left": 30,
 					"width": 470,
-					"height": 170,
+					"height": 190,
 					"sizingX": "grow",
 					"dataSource": "_TabLineCode{8}",
 					"focusable": false,
@@ -697,7 +697,7 @@
 				"Button5": {
 					"type": "button",
 					"text": "Clear all contexts",
-					"top": 660,
+					"top": 680,
 					"left": 30,
 					"width": 150,
 					"height": 20,
@@ -784,10 +784,10 @@
 				},
 				"NewCommand7": {
 					"type": "input",
-					"top": 660,
+					"top": 680,
 					"left": 200,
 					"width": 470,
-					"height": 100,
+					"height": 90,
 					"visibility": "visible",
 					"sizingX": "grow",
 					"focusable": false,
@@ -809,10 +809,10 @@
 			"objects": {
 				"List Box": {
 					"type": "listbox",
-					"left": 111,
-					"top": 530,
+					"left": 30,
+					"top": 550,
 					"width": 815,
-					"height": 241,
+					"height": 221,
 					"events": [
 						"onClick",
 						"onHeaderClick",
@@ -845,8 +845,8 @@
 				},
 				"LBPersons1": {
 					"type": "listbox",
-					"left": 656,
-					"top": 254,
+					"left": 650,
+					"top": 270,
 					"width": 315,
 					"height": 241,
 					"events": [
@@ -892,7 +892,7 @@
 				"Button8": {
 					"type": "button",
 					"text": "Run code (optimized)",
-					"top": 232,
+					"top": 372,
 					"left": 30,
 					"width": 200,
 					"height": 20,
@@ -904,7 +904,7 @@
 				},
 				"LBSelectRows4": {
 					"type": "input",
-					"top": 260,
+					"top": 400,
 					"left": 30,
 					"width": 600,
 					"height": 140,
@@ -925,7 +925,7 @@
 				"Input3": {
 					"type": "input",
 					"left": 920,
-					"top": 500,
+					"top": 520,
 					"width": 50,
 					"height": 20,
 					"dataSource": "Form:C1466.persons.length",
@@ -933,8 +933,8 @@
 				},
 				"NewCommand10": {
 					"type": "input",
-					"top": 500,
-					"left": 660,
+					"top": 520,
+					"left": 650,
 					"width": 150,
 					"height": 20,
 					"visibility": "visible",
@@ -956,8 +956,8 @@
 					"type": "input",
 					"top": 60,
 					"left": 70,
-					"width": 830,
-					"height": 160,
+					"width": 850,
+					"height": 180,
 					"sizingX": "grow",
 					"dataSource": "_Descriptions{5}",
 					"focusable": false,
@@ -975,7 +975,7 @@
 				"Button9": {
 					"type": "button",
 					"text": "Run code (not optimized)",
-					"top": 422,
+					"top": 270,
 					"left": 30,
 					"width": 200,
 					"height": 20,
@@ -987,7 +987,7 @@
 				},
 				"LBSelectRows6": {
 					"type": "input",
-					"top": 450,
+					"top": 300,
 					"left": 30,
 					"width": 600,
 					"height": 60,
@@ -1014,7 +1014,7 @@
 					"left": 30,
 					"top": 550,
 					"width": 815,
-					"height": 201,
+					"height": 221,
 					"events": [
 						"onClick",
 						"onHeaderClick",
@@ -1047,7 +1047,7 @@
 				"List Box3": {
 					"type": "listbox",
 					"left": 650,
-					"top": 200,
+					"top": 210,
 					"width": 275,
 					"height": 181,
 					"events": [
@@ -1093,7 +1093,7 @@
 				"Button10": {
 					"type": "button",
 					"text": "Run code (optimized)",
-					"top": 230,
+					"top": 330,
 					"left": 30,
 					"width": 200,
 					"height": 20,
@@ -1106,7 +1106,7 @@
 				"Input10": {
 					"type": "input",
 					"left": 730,
-					"top": 390,
+					"top": 400,
 					"width": 150,
 					"height": 20,
 					"enterable": false,
@@ -1117,7 +1117,7 @@
 				"Input11": {
 					"type": "input",
 					"left": 730,
-					"top": 430,
+					"top": 440,
 					"width": 150,
 					"height": 20,
 					"enterable": false,
@@ -1128,7 +1128,7 @@
 				"Input12": {
 					"type": "input",
 					"left": 730,
-					"top": 470,
+					"top": 480,
 					"width": 150,
 					"height": 20,
 					"enterable": false,
@@ -1139,7 +1139,7 @@
 				"Text": {
 					"type": "text",
 					"text": "Firstname",
-					"top": 390,
+					"top": 400,
 					"left": 630,
 					"width": 80,
 					"height": 20,
@@ -1147,7 +1147,7 @@
 				},
 				"LBSelectRows7": {
 					"type": "input",
-					"top": 260,
+					"top": 360,
 					"left": 30,
 					"width": 600,
 					"height": 170,
@@ -1168,7 +1168,7 @@
 				"Text8": {
 					"type": "text",
 					"text": "Lastname",
-					"top": 430,
+					"top": 440,
 					"left": 630,
 					"width": 80,
 					"height": 20,
@@ -1177,7 +1177,7 @@
 				"Text9": {
 					"type": "text",
 					"text": "Children",
-					"top": 470,
+					"top": 480,
 					"left": 630,
 					"width": 80,
 					"height": 20,
@@ -1206,7 +1206,7 @@
 				"Button11": {
 					"type": "button",
 					"text": "Run code (not optimzed)",
-					"top": 440,
+					"top": 220,
 					"left": 30,
 					"width": 200,
 					"height": 20,
@@ -1218,7 +1218,7 @@
 				},
 				"LBSelectRows8": {
 					"type": "input",
-					"top": 470,
+					"top": 250,
 					"left": 30,
 					"width": 600,
 					"height": 60,
@@ -1239,7 +1239,7 @@
 				"Input9": {
 					"type": "input",
 					"left": 730,
-					"top": 510,
+					"top": 520,
 					"width": 150,
 					"height": 20,
 					"enterable": false,
@@ -1250,7 +1250,7 @@
 				"Text10": {
 					"type": "text",
 					"text": "Gender",
-					"top": 510,
+					"top": 520,
 					"left": 630,
 					"width": 80,
 					"height": 20,
@@ -1308,7 +1308,7 @@
 					"type": "button",
 					"text": "Run code (optimized)",
 					"top": 250,
-					"left": 30,
+					"left": 400,
 					"width": 200,
 					"height": 20,
 					"events": [
@@ -1320,7 +1320,7 @@
 				"LBSelectRows9": {
 					"type": "input",
 					"top": 280,
-					"left": 30,
+					"left": 400,
 					"width": 590,
 					"height": 120,
 					"sizingX": "grow",
@@ -1451,7 +1451,7 @@
 					"type": "button",
 					"text": "Run code (not optimized)",
 					"top": 250,
-					"left": 630,
+					"left": 30,
 					"width": 200,
 					"height": 20,
 					"events": [
@@ -1463,7 +1463,7 @@
 				"LBSelectRows10": {
 					"type": "input",
 					"top": 280,
-					"left": 630,
+					"left": 30,
 					"width": 360,
 					"height": 90,
 					"sizingX": "grow",
@@ -1520,7 +1520,7 @@
 		"version": "1",
 		"kind": "form"
 	},
-	"geometryStamp": 4161,
+	"geometryStamp": 4593,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",

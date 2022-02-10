@@ -1,7 +1,7 @@
 
 var $text : Text
 var $address : cs:C1710.AddressEntity
-var $contextAddress : Object
+var $shortAddress : Object
 
 If (btnTrace)
 	TRACE:C157
@@ -12,11 +12,11 @@ Form:C1466.ds.Address.clearRemoteCache()
 
 $text:=""
 
-$contextAddress:=New object:C1471("context"; "contextAddress")
+$shortAddress:=New object:C1471("context"; "shortAddress")
 
-// The contextAddress is used
+// The shortAddress context  is used
 // The used attributes are recorded under this context
-$address:=Form:C1466.ds.Address.get(1; $contextAddress)
+$address:=Form:C1466.ds.Address.get(1; $shortAddress)
 
 $text:=$address.city+" "+$address.zipCode
 
