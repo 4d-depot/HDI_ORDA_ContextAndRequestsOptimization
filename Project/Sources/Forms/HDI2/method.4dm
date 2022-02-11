@@ -39,6 +39,8 @@ Case of
 		
 		Form:C1466.longCacheSettings:=New object:C1471("timeout"; 180)
 		
+		//SET TIMER:C645(1*60)
+		
 		viewTrace
 		manageTexts
 		RW
@@ -63,5 +65,9 @@ Case of
 		
 		viewTrace
 		RW
+		
+	: (Form event code:C388=On Timer:K2:25)
+		SET TIMER:C645(0)
+		Form:C1466.log:=Form:C1466.ds.getRequestLog().reverse().filter("removeRelease")
 		
 End case 

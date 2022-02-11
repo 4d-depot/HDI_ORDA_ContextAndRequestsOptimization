@@ -12,6 +12,7 @@
 	"markerFooter": 240,
 	"events": [
 		"onLoad",
+		"onTimer",
 		"onPageChange"
 	],
 	"method": "method.4dm",
@@ -974,7 +975,7 @@
 				},
 				"Button9": {
 					"type": "button",
-					"text": "Run code (not optimized)",
+					"text": "Run code (automatic)",
 					"top": 270,
 					"left": 30,
 					"width": 200,
@@ -1092,7 +1093,7 @@
 				},
 				"Button10": {
 					"type": "button",
-					"text": "Run code (optimized)",
+					"text": "Run code (automatic)",
 					"top": 330,
 					"left": 30,
 					"width": 200,
@@ -1449,7 +1450,7 @@
 				},
 				"Button14": {
 					"type": "button",
-					"text": "Run code (not optimized)",
+					"text": "Run code (automatic)",
 					"top": 250,
 					"left": 30,
 					"width": 200,

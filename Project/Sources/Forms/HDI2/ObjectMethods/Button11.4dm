@@ -16,3 +16,4 @@ Form:C1466.persons:=Form:C1466.ds.Persons.all($contextPersons)
 
 Form:C1466.log:=Form:C1466.ds.getRequestLog().reverse().filter("removeRelease")
 
+SET TIMER:C645(6)
