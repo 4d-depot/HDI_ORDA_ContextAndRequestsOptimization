@@ -32,7 +32,7 @@ Case of
 		
 		$options:=New object:C1471
 		
-		$options.title:="get started with REST requests control?"
+		$options.title:="get started with REST request control?"
 		
 		$options.blog:="blog.4d.com"
 		
