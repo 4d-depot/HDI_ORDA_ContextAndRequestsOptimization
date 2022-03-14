@@ -1,7 +1,7 @@
 //%attributes = {}
 
-var $1 : Object
+#DECLARE($obj : Object)
 
-If (Position:C15("$release"; $1.value.url)=0)
-	$1.result:=True:C214
+If (Position:C15("$release"; $obj.value.url)=0)
+	$obj.result:=True:C214
 End if 

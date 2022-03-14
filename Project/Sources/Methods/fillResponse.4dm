@@ -1,9 +1,9 @@
 //%attributes = {}
 
 
-var $1 : Object
+#DECLARE($data : Object)
 
-Form:C1466.data:=$1
+Form:C1466.data:=$data
 
 
 

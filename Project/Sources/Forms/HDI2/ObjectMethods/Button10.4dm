@@ -8,6 +8,7 @@ End if
 
 Form:C1466.ds.clearAllRemoteContexts()
 Form:C1466.ds.Persons.clearRemoteCache()
+Form:C1466.ds.Persons.setRemoteCacheSettings(Form:C1466.normalCacheSettings)
 
 $contextPersons:=New object:C1471("context"; "persons")
 

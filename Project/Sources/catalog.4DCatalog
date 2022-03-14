@@ -35,7 +35,6 @@
 		<field name="gender" uuid="3CC399ADA6B249C0B570DF313A940729" type="10" limiting_length="255" never_null="true" id="5"/>
 		<field name="children" uuid="2AF20E42E47B49F1A3423D9971211DBC" type="3" never_null="true" id="6"/>
 		<field name="addressID" uuid="232A52618C1042C3B535285CF8D62C6B" type="4" never_null="true" id="7"/>
-		<field name="tempGender" uuid="E666508E59394432BD7E12AE18F68AF1" type="1" never_null="true" id="8"/>
 		<primary_key field_name="ID" field_uuid="793E3BF909784EFCB24685EB7DE1D134"/>
 		<table_extra>
 			<editor_table_info displayable_fields_count="9">
