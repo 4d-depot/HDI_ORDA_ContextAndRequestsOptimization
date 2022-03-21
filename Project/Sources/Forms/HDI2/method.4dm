@@ -70,6 +70,7 @@ Case of
 		Form:C1466.log:=Null:C1517
 		Form:C1466.addresses:=Null:C1517
 		
+		manageTexts
 		viewTrace
 		RW
 		
